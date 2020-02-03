@@ -15,7 +15,7 @@ body {
     padding: 2em;
 }
 h1 {
-    font-size: 2.2em;
+    font-size: 1.2em;
     margin: .3em 0;
 }
 p.subheading {
@@ -24,7 +24,7 @@ p.subheading {
 }
 .color-container {
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, 150px);
     grid-gap: 1em;
 }
 .color {
@@ -45,14 +45,28 @@ span {
 .color:nth-of-type(6) span { background: lightseagreen; }
 
 p.code {
-    font-size: 1.5em;
+    font-size: .8em;
     margin-bottom: 0;
     margin-top: .8em;
-    font-weight: bold;
 }
 p.desc {
     margin-bottom: 0;
     background: #DAE7EB;
     margin: 1em -1em 0;
     padding: 1em;
+}
+
+/* Overwrites */
+
+.color-container {
+    grid-template-columns: repeat(3, auto);
+}
+
+h1 {
+    font-size: 2.2em;
+}
+
+p.code {
+    font-size: 1.5em;
+    font-weight: bold;
 }
